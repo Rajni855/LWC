@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-box">
+    <div class="demo-only" style="padding:0.5rem;background:#5e9ca0">
+        <div class="slds-text-heading_large">User Registration Form</div>
+    </div>
+    <lightning-input type="text" name="Firstname" label="First Name"  onchange={captureInput1}></lightning-input>
+    <lightning-input type="text" name="Lastname" label="Last Name" onchange={captureInput2}></lightning-input>
+    <lightning-slider label="Age" ></lightning-slider>
+    <lightning-input type="Email" name="e-mail" label="Email" onchange={captureInput2}></lightning-input>
+    <lightning-combobox name="Department" label="Department" placeholder="Select Department" options={departments} onchange={handleChange} ></lightning-combobox>
+    <lightning-input label="Show Previous result"  type="checkbox"  onchange={captureShowResult} >
+    </lightning-input>
+    </div>
+</template>

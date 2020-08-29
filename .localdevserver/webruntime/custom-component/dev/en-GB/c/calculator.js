@@ -1,0 +1,1 @@
+{"errors":[{"filename":"C:\\Salesforce\\NewLearningProject\\force-app\\main\\default\\lwc\\calculator\\calculator.html","location":{"line":14,"column":13,"start":1089,"length":87},"code":"","message":"Missing key for element <li> inside of iterator. Elements within iterators must have a unique, computed key value."}]}

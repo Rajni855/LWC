@@ -1,0 +1,18 @@
+<template>
+    <lightning-layout multiple-rows>
+      <lightning-layout-item size="6">
+        <lightning-card title="Select Account">
+          
+          <div slot="actions">
+             <lightning-button title="New Account" label="New Account" slot="actions" onclick={createNewAccount}></lightning-button>
+          </div>
+          <p class="slds-var-p-horizontal_small">
+            <lightning-layout-item class="slds-align-middle">
+                <lightning-combobox class="slds-align-middle" onchange={handleAccountChange}
+                value={selectedAccountId} options={searchAccount}></lightning-combobox>
+            </lightning-layout-item>
+          </p>
+        </lightning-card>
+      </lightning-layout-item>
+    </lightning-layout>
+</template>

@@ -1,0 +1,25 @@
+<template>
+    <lightning-card  title="My Own Calculator">
+        <p class="slds-p-horizontal_small">
+            <lightning-input type="number" name="input1" label="Enter a number"  onchange={captureInput1}></lightning-input>
+            <lightning-input type="number" name="input2" label="Enter a number" onchange={captureInput2}></lightning-input>
+            <lightning-button-group>
+                    <lightning-button label={addLabel} icon-name="utility:edit"  variant="brand" onclick={onCompute}></lightning-button>
+                    <lightning-button label={subtractLabel} icon-name="utility:edit"   variant="brand" onclick={onCompute}></lightning-button>
+                    <lightning-button label={multiplyLabel} icon-name="utility:edit"  variant="brand" onclick={onCompute}></lightning-button>
+                    <lightning-button label={divideLabel} icon-name="utility:edit"  variant="brand" onclick={onCompute}></lightning-button>
+            </lightning-button-group>            
+        </p>
+        <br/>
+        <lightning-input label="Show Previous result"  type="checkbox"  onchange={captureShowResult} >
+        </lightning-input>
+        <template if:true={showPreviousResult}>
+        <template for:each={previousResult} for:item="result">
+            <li key={result.num1}>
+                {result.num1} {result.operator} {result.num2} = {result.num3}
+            </li>
+        </template>
+        </template>
+        <p slot="footer">Result:{result} </p>
+    </lightning-card> 
+</template>
