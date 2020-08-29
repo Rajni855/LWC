@@ -1363,5 +1363,16 @@
         "component://c/userRegistrationForm@en-GB": {
             "dev": "9e32481de5"
         }
+    },
+    "717abc497d": {
+        "component://@webruntime/app@en-GB": {
+            "dev": "ede600bfef"
+        },
+        "component://localdevserver/preview@en-GB": {
+            "dev": "1adcc89400"
+        },
+        "component://c/userRegistrationForm@en-GB": {
+            "dev": "9e32481de5"
+        }
     }
 }
